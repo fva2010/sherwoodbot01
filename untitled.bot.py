@@ -46,7 +46,7 @@ def webhook():
     # Если вы будете использовать хостинг или сервис без https
     # то вам необходимо создать сертификат и
     # добавить параметр certificate=open('ваш сертификат.pem')
-    bot.set_webhook(url="https://sherwoodbot01.herokuapp.com/")
+    bot.set_webhook(url="https://sherwoodbot01.herokuapp.com")
     return "!", 200
 
 server.run(host="0.0.0.0", port=os.environ.get('PORT', 5000))
